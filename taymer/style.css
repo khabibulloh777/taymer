@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: "Baloo Tammudu 2", cursive;
+  background: #f1e4e4;
+}
+.box {
+  height: 450px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(to bottom, #bd098d, #a41bcb);
+}
+.box {
+  position: relative;
+  letter-spacing: 1px;
+  margin: 35px 0;
+  text-align: center;
+}
+
+.box h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 2px;
+  background-color: #fff;
+}
+.time__circle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #e337d5;
+  border-radius: 50%;
+  border: 2px solid #7604d1;
+  text-align: center;
+}
+.time__circle p {
+  font-size: 18px;
+  margin: 35px 0;
+}
+.sec__circle {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  height: 50%;
+  width: 2px;
+  transform-origin: bottom;
+  transition: 1s;
+}
+
+.sec__circle::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.time__controls {
+  margin-top: 150px;
+}
+span {
+  cursor: pointer;
+}
+.timer__controls .play__btn {
+  padding: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  color: #4d01fa;
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #4d01fa;
+}
